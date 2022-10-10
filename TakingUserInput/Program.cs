@@ -6,11 +6,14 @@ namespace TakingUserInput
     {
         static void Main(string[] args)
         {
+            string userName;
+            int userAge;
+
             Console.WriteLine("What is your name?");
-            string userName = Console.ReadLine();
+            userName = Console.ReadLine();
 
             Console.WriteLine("How old are you?");
-            int userAge = Convert.ToInt32(Console.ReadLine());
+            userAge = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine($"Hello {userName}, You are {userAge} years old.");
         }
